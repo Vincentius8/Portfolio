@@ -37,8 +37,8 @@ $context = "You are an AI assistant for John Vincent Pangilinan's portfolio webs
 About John Vincent Pangilinan:
 - Junior Software Engineer & Junior Web Developer from the Philippines
 - Graduating BSIT student with hands-on OJT and freelance experience
-- Gmail: your.email@gmail.com
-- Telegram: @yourusername
+- Gmail: johnvincentppangilinan@gmail.com
+- Telegram: @Vincenzouu
 - Location: Philippines
 - GitHub: github.com/yourusername
 
@@ -97,8 +97,8 @@ Soft Skills:
 - Adaptability
 
 Contact:
-- Gmail: your.email@gmail.com
-- Telegram: @yourusername
+- Gmail: johnvincentppangilinan@gmail.com
+- Telegram: @Vincenzouu
 - GitHub: github.com/yourusername
 
 Answer questions about John Vincent's skills, projects, education, and experience professionally and conversationally. 
@@ -251,7 +251,7 @@ function getFallbackResponse($message) {
     }
     
     if (strpos($message, 'contact') !== false || strpos($message, 'hire') !== false || strpos($message, 'email') !== false || strpos($message, 'reach') !== false || strpos($message, 'telegram') !== false) {
-        return "You can reach John Vincent via Gmail at your.email@gmail.com or Telegram @yourusername. He's based in the Philippines and available for freelance projects and full-time opportunities. Feel free to discuss your project needs!";
+        return "You can reach John Vincent via Gmail at johnvincentppangilinan@gmail.com or Telegram @Vincenzouu. He's based in the Philippines and available for freelance projects and full-time opportunities. Feel free to discuss your project needs!";
     }
     
     if (strpos($message, 'experience') !== false || strpos($message, 'ojt') !== false || strpos($message, 'work') !== false) {
@@ -275,9 +275,9 @@ function getFallbackResponse($message) {
     }
     
     if (strpos($message, 'available') !== false || strpos($message, 'free') !== false) {
-        return "Yes! John Vincent is available for both freelance projects and full-time opportunities. He has proven experience with e-commerce development, payment integration, and full-stack web applications. Contact him via Gmail (your.email@gmail.com) or Telegram (@yourusername) to discuss your project!";
+        return "Yes! John Vincent is available for both freelance projects and full-time opportunities. He has proven experience with e-commerce development, payment integration, and full-stack web applications. Contact him via Gmail (johnvincentppangilinan@gmail.com) or Telegram (@Vincenzouu) to discuss your project!";
     }
     
-    return "Thanks for your interest in John Vincent! He's a talented Junior Software Engineer with freelance e-commerce experience and NC II EPAS certification. For specific questions about his skills, projects, or availability, feel free to ask or contact him directly via Gmail (your.email@gmail.com) or Telegram (@yourusername)!";
+    return "Thanks for your interest in John Vincent! He's a talented Junior Software Engineer with freelance e-commerce experience and NC II EPAS certification. For specific questions about his skills, projects, or availability, feel free to ask or contact him directly via Gmail johnvincentppangilinan@gmail.com or Telegram @Vincenzouu!";
 }
 ?>
