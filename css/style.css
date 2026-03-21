@@ -8,71 +8,12 @@
     --card-bg: #1e1e1e;
 }
 
-* {
-    margin: 0;
+body{
     padding: 0;
     box-sizing: border-box;
+
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: var(--dark-bg);
-    color: var(--light-text);
-    overflow-x: hidden;
-    /* Prevent font boosting on Android */
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    /* Prevent iOS tap highlight flash */
-    -webkit-tap-highlight-color: transparent;
-    /* Smooth momentum scroll iOS */
-    -webkit-overflow-scrolling: touch;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.navbar {
-    padding: 1rem 0;
-    transition: all 0.3s ease;
-    background: transparent;
-}
-
-.navbar.scrolled {
-    background: rgba(10, 10, 10, 0.95) !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.gradient-text {
-    background: var(--primary-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.nav-link {
-    color: var(--light-text) !important;
-    margin: 0 0.5rem;
-    font-weight: 500;
-    position: relative;
-    transition: all 0.3s ease;
-    /* Larger touch target on mobile */
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
-}
-
-.nav-link:hover {
-    color: #667eea !important;
-}
 
 .nav-link::after {
     content: '';
@@ -359,9 +300,6 @@ html {
     font-size: 1.1rem;
 }
 
-/* ================================
-   SKILLS SECTION
-================================ */
 .skill-category {
     background: var(--card-bg);
     padding: 30px;
@@ -395,8 +333,6 @@ html {
     background: var(--primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 1.3rem;
 }
 
 .skill-tags {
@@ -763,7 +699,6 @@ html {
     flex-shrink: 0;
 }
 
-<<<<<<< HEAD
 .contact-item h6 { margin-bottom: 5px; color: var(--light-text-50); }
 .contact-item p  { margin: 0; overflow-wrap: anywhere; }
 
@@ -1166,7 +1101,6 @@ html {
 .chatbot-attach-btn:focus-visible,
 .btn-close-custom:focus-visible { outline: 2px solid #0088cc; outline-offset: 2px; }
 
-<<<<<<< HEAD
 /* ================================
    RESPONSIVE BREAKPOINTS
 ================================ */
@@ -1193,213 +1127,14 @@ html {
         height: calc(100dvh - 140px);
         max-height: 500px;
         max-width: 360px;
-=======
-/* Responsive */
-@media (max-width: 1199.98px) {
-    .hero-image {
-        height: 420px;
-    }
-
-    .card-1 {
-        width: 260px;
-        height: 180px;
-    }
-
-    .card-2 {
-        width: 220px;
-        height: 220px;
-    }
-
-    .card-3 {
-        width: 170px;
-        height: 130px;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .navbar {
-        padding: 0.75rem 0;
-    }
-
-    .navbar-collapse {
-        margin-top: 0.75rem;
-        padding: 0.75rem 1rem;
-        border-radius: 12px;
-        background: rgba(10, 10, 10, 0.96);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .nav-link {
-        margin: 0.2rem 0;
-    }
-
-    .hero-section {
-        text-align: center;
-        padding-top: 92px;
-    }
-
-    .hero-section .row {
-        min-height: auto !important;
-        padding: 48px 0 70px;
-    }
-
-    .hero-section h1 {
-        font-size: clamp(2rem, 7vw, 3.2rem);
-    }
-
-    .hero-section h2 {
-        font-size: clamp(1rem, 3.8vw, 1.4rem);
-    }
-
-    .hero-section .lead {
-        font-size: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 640px;
-    }
-
-    .hero-image {
-        display: none;
-    }
-
-    .scroll-indicator {
-        bottom: 20px;
-    }
-
-    .section-padding {
-        padding: 80px 0;
-    }
-
-    .section-title {
-        margin-bottom: 46px;
-    }
-
-    .section-title h2 {
-        font-size: clamp(1.8rem, 5.5vw, 2.3rem);
-    }
-
-    .about-content {
-        margin-top: 26px;
-    }
-
-    .about-image {
-        max-width: 300px;
-    }
-
-    .soft-skills-section {
-        padding: 30px 24px;
-    }
-
-    .project-overlay {
-        opacity: 1;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.35));
-        align-items: flex-end;
-        padding-bottom: 16px;
-    }
-
-    .project-overlay .btn,
-    .project-card:hover .project-overlay .btn {
-        transform: none;
-        opacity: 1;
-    }
-
-    #chatbot-container {
-        right: max(16px, env(safe-area-inset-right));
-        bottom: max(16px, env(safe-area-inset-bottom));
-    }
-}
-
-@media (max-width: 767.98px) {
-    .hero-section {
-        text-align: center;
-        padding-top: 84px;
-    }
-
-    .container {
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-
-    .section-padding {
-        padding: 60px 0;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-
-    .btn-gradient,
-    .btn-outline-light {
-        width: 100%;
-        max-width: 320px;
-    }
-
-    .about-image {
-        max-width: 280px;
-        margin-bottom: 30px;
-    }
-
-    .about-image img {
-        max-height: 320px;
-    }
-
-    .info-item {
-        gap: 12px;
-    }
-
-    .info-item i {
-        font-size: 1.2rem;
-    }
-
-    .skill-category,
-    .project-content,
-    .experience-card {
-        padding: 22px;
-    }
-
-    .project-image {
-        height: 220px;
-    }
-
-    .contact-item {
-        gap: 14px;
-    }
-
-    .contact-icon {
-        width: 52px;
-        height: 52px;
-        font-size: 1.2rem;
-    }
-
-    #chatbot-container {
-        right: 16px;
-        bottom: 16px;
-    }
-
-    .chatbot-window {
-        width: min(360px, calc(100vw - 32px));
-        height: min(500px, calc(100dvh - 120px));
->>>>>>> 0876913 (Responsive redesign: mobile/tablet support, overflow fixes, chatbot viewport fit)
         bottom: 75px;
         right: 0;
     }
 
-<<<<<<< HEAD
     .chatbot-toggle { width: 56px; height: 56px; font-size: 1.4rem; }
 
     .skill-category { padding: 20px; }
     .skill-tags     { gap: 8px; }
-=======
-    .chatbot-toggle {
-        width: 56px;
-        height: 56px;
-        font-size: 1.4rem;
-    }
-
-    .skill-tags {
-        gap: 8px;
-    }
->>>>>>> 0876913 (Responsive redesign: mobile/tablet support, overflow fixes, chatbot viewport fit)
 
     .skill-tag {
         padding: 8px 14px;
@@ -1407,7 +1142,6 @@ html {
         white-space: normal;
     }
 
-<<<<<<< HEAD
     .project-badge  { padding: 6px 12px; font-size: 0.7rem; }
     .soft-skills-section { padding: 25px 20px; }
     .experience-card { margin-bottom: 20px; }
@@ -1439,121 +1173,6 @@ html {
         width: calc(100vw - 24px);
         right: -8px;
         border-radius: 12px 12px 0 12px;
-=======
-    .project-badge {
-        padding: 6px 12px;
-        font-size: 0.7rem;
-    }
-
-    .soft-skills-section {
-        padding: 25px 20px;
-    }
-
-    .experience-card {
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .container {
-        padding-left: 14px;
-        padding-right: 14px;
-    }
-
-    .hero-section .row {
-        padding: 34px 0 56px;
-    }
-
-    .hero-section h1 {
-        font-size: clamp(1.75rem, 9vw, 2.5rem);
-    }
-
-    .hero-section .lead {
-        font-size: 0.95rem;
-    }
-
-    .section-title h2 {
-        font-size: 1.7rem;
-    }
-
-    .section-title p {
-        font-size: 1rem;
-    }
-
-    .project-image {
-        height: 200px;
-    }
-
-    .project-overlay {
-        gap: 8px;
-        flex-wrap: wrap;
-        padding: 12px;
-    }
-
-    .project-overlay .btn {
-        font-size: 0.78rem;
-    }
-
-    .project-content h5 {
-        font-size: 1.05rem;
-    }
-
-    .project-content p,
-    .project-features ul li {
-        font-size: 0.84rem;
-    }
-
-    .chatbot-window {
-        width: calc(100vw - 24px);
-        height: min(500px, calc(100dvh - 108px));
-        right: -4px;
-        border-radius: 10px;
-    }
-
-    .message-bubble-wrapper {
-        max-width: 75vw;
-    }
-
-    .message-content p {
-        font-size: 14px;
-        line-height: 19px;
-    }
-}
-
-@media (max-width: 400px) {
-    .navbar-brand {
-        font-size: 1.3rem;
-    }
-
-    .btn-gradient,
-    .btn-outline-light {
-        max-width: 100%;
-    }
-
-    .skill-tag {
-        font-size: 0.8rem;
-        padding: 7px 12px;
-    }
-
-    .chatbot-toggle {
-        width: 52px;
-        height: 52px;
-        font-size: 1.2rem;
-    }
-
-    .chatbot-window {
-        width: calc(100vw - 16px);
-        height: min(470px, calc(100dvh - 96px));
-        right: -2px;
-    }
-
-    .chatbot-header {
-        padding: 12px;
-    }
-
-    .chatbot-input {
-        padding: 8px 10px 10px 10px;
->>>>>>> 0876913 (Responsive redesign: mobile/tablet support, overflow fixes, chatbot viewport fit)
     }
 }
 
